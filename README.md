@@ -1,1 +1,1 @@
-# A course on Fullstack Web Development from the University of Helsinki, Finland
+# Fullstack Web Development course from the University of Helsinki, Finland
