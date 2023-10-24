@@ -1,0 +1,26 @@
+Addition of a note by user
+
+    browser->>server: makes a post request; POST https://studies.cs.helsinki.fi/exampleapp/notes
+    
+    server-->>browser: Makes an HTTP GET request to '/notes'
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+
+    server-->>browser: sends the HTML code
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+
+    server-->>browser: sends the css file
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+
+    server-->>browser: sends the JavaScript file
+    
+    Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
+    
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+    server-->>browser: [{ "content": "Free Palestine", "date": "2023-10-23" }, ... ]
+        
+
+    Note right of browser: The browser executes the event hendler that renders the notes to display

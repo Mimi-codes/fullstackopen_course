@@ -1,0 +1,23 @@
+
+ User goes to Single Page App (SPA) Version with a browser
+ 
+    browser->>server: makes an HTTP GET request; GET https://studies.cs.helsinki.fi/exampleapp/spa
+    
+    server-->>browser: sends HTML code
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+
+    server-->>browser: sends the css file
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+
+    server-->>browser: sends the JavaScript file
+    
+    Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
+    
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+    server-->>browser: [{ "content": "Free Palestine", "date": "2023-10-23" }, ... ]
+        
+
+    Note right of browser: The browser executes the event handler that renders the notes to display 

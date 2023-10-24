@@ -1,0 +1,13 @@
+
+ User creates a new note in Single Page App (SPA) Version
+ 
+    browser->>server: makes an HTTP POST request; POST https://studies.cs.helsinki.fi/exampleapp/new-note-spa
+    
+Note right of browser: The browser 
+contains a new-note in jSON format which includes Content-type and date such as:
+Content-type: application/json
+{ "content": "Free Palestine", "date": "2023-10-23"}
+    
+server-->>browser: responds with 201 status code (success)
+
+Note right of browser: The browser executes the event handler that renders the notes to display 
