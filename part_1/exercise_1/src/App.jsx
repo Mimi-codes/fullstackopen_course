@@ -1,9 +1,7 @@
 import React from 'react'
 
-const App = () => {
-
-  // ===header===
-  const Header = (props) => {
+ // ===header===
+ const Header = (props) => {
   return (
     <>
     <h1>{props.title}</h1>
@@ -46,6 +44,8 @@ const Total = (props) => {
   )
   }
 
+
+const App = () => {
 const course = {
   name: 'Half Stack application development',
   parts: [
